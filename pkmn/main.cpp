@@ -11,9 +11,18 @@ void dump_charm(const pkmn::Charmander &charm)
 
 int main(void)
 {
-    pkmn::Charmander charm("Antoine");
+    pkmn::Charmander Charm("Michelle");
+	pkmn::Nurse nurse;
 
-    dump_charm(charm);
-    charm.health() -= 10;
-    dump_charm(charm);
+	Charm.health() -= 13;
+	std::cout << Charm.health() << std::endl;
+	nurse.heal(Charm);
+	std::cout << Charm.health() << std::endl;
+
+	pkmn::Pikachu pika("Daniel");
+
+	pika.health() -= 13;
+	std::cout << pika.health() << std::endl;
+	nurse.heal(pika);
+	std::cout << pika.health() << std::endl;
 }
