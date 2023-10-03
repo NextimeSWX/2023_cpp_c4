@@ -1,12 +1,12 @@
-#ifndef PIKACHU_HPP_
-#define PIKACHU_HPP_
+#ifndef CHARMANDER_HPP_
+#define CHARMANDER_HPP_
 #include <algorithm>
 #include <iostream>
 
 namespace pkmn {
-class Pikachu {
+class Charmander {
 public:
-    Pikachu(std::string);
+    Charmander(std::string);
     const std::string   species() const;
     const std::string   type() const;
     const std::string   name() const;
@@ -15,8 +15,8 @@ public:
     bool                fainted();
 
 private:
-    std::string  _species = "Pikachu";
-    std::string  _type    = "Electric";
+    std::string  _species = "Charmander";
+    std::string  _type    = "Fire";
     std::string  _name;
     unsigned int _health;
 };

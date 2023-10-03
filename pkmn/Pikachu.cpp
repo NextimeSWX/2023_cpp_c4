@@ -1,4 +1,5 @@
 #include "Pikachu.hpp"
+#include "Nurse.hpp"
 
 pkmn::Pikachu::Pikachu(std::string pseudo)
 {

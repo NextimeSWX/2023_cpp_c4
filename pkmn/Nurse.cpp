@@ -12,9 +12,11 @@ void pkmn::Nurse::heal(Pikachu &pikachu)
         std::cout << "There there" << pikachu.name()
                   << ", you should feel way better now!" << std::endl;
     } else if (pikachu.health() > 50 && pikachu.health() < 100) {
-        std::cout << "That should do it, " << pikachu.name() << "!" << std::endl;
+        std::cout << "That should do it, " << pikachu.name() << "!"
+                  << std::endl;
     } else {
-        std::cout << "You already are in tip-top shape, " << pikachu.name() << "!" << std::endl;
+        std::cout << "You already are in tip-top shape, " << pikachu.name()
+                  << "!" << std::endl;
     }
     pikachu.health() = 100;
 }
